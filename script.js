@@ -54,3 +54,23 @@ function renderTodos() {
     todoList.appendChild(li);
   }
 }
+
+todoList.addEventListener("click", function (event) {
+  var cancel = event.target;
+  if (cancel.matches("button") === true) {
+    var index = cancel.parentElement.getAttribute("data-index");
+    todos.splice(index, 1);
+
+    storeTodos();
+    renderTodos();
+  }
+});
+
+function initial() {
+  var storedTodos = JSON.parsel(localStorage.getItem("todos"));
+
+  if (storedTodos !== null) {
+    todos = storedTodos;
+  }
+  renderTodos();
+}
