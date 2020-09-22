@@ -6,7 +6,7 @@ var todoCountSpan = document.querySelector("#todo-count");
 
 // Global variables
 var count = 0;
-var tasks = [];
+var todos = [];
 
 // when tasks is type, it's added to the lists
 
@@ -19,7 +19,7 @@ todoForm.addEventListener("submit", function (event) {
     alert("No task was entered");
   } else {
     tallyCount();
-    tasks.push(todoText);
+    todos.push(todoText);
     todoInput.value = "";
 
     storeTodos();
@@ -31,3 +31,13 @@ function tallyCount() {
   count++;
   todoCountSpan.innerHTML = count;
 }
+
+function storeTodos() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+// function renderTodos() {
+//   console.log(todoList.innerHTML);
+//   todoCountSpan.textContent = todos.length;
+//   for
+// }
