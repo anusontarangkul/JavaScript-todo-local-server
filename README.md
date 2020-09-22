@@ -19,6 +19,8 @@ No instalation needed
 ## Usage
 
 You type your todo into the form and press enter. Once you finish the todo, you press complete to clear it.
+Here is the video tutorial on Youtube.
+(Youtube)[https://www.youtube.com/watch?v=7EajOseIdUs&feature=youtu.be]
 
 ## Credits
 
