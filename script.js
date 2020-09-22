@@ -8,8 +8,7 @@ var todoCountSpan = document.querySelector("#todo-count");
 var count = 0;
 var todos = [];
 
-// when tasks is type, it's added to the lists
-
+// Submit todo
 todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -18,7 +17,6 @@ todoForm.addEventListener("submit", function (event) {
   if (todoText === "") {
     alert("Nothing was entered");
   } else {
-    tallyCount();
     todos.push(todoText);
     todoInput.value = "";
 
@@ -27,15 +25,12 @@ todoForm.addEventListener("submit", function (event) {
   }
 });
 
-function tallyCount() {
-  count++;
-  todoCountSpan.innerHTML = count;
-}
-
+// Add todo to local storage
 function storeTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+// create lists of todos
 function renderTodos() {
   todoList.innerHTML = "";
   todoCountSpan.textContent = todos.length;
@@ -55,6 +50,7 @@ function renderTodos() {
   }
 }
 
+// Cancel todo
 todoList.addEventListener("click", function (event) {
   var cancel = event.target;
   if (cancel.matches("button") === true) {
@@ -66,11 +62,14 @@ todoList.addEventListener("click", function (event) {
   }
 });
 
+// Opening saved todos
 function initial() {
-  var storedTodos = JSON.parsel(localStorage.getItem("todos"));
+  var storedTodos = JSON.parse(localStorage.getItem("todos"));
 
   if (storedTodos !== null) {
     todos = storedTodos;
   }
   renderTodos();
 }
+
+initial();

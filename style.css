@@ -14,7 +14,7 @@ input {
   width: 100%;
   padding: 6px;
   margin-top: 10px;
-  font-size: 2.4em;
+  font-size: 2em;
   border: none;
 }
 
@@ -64,4 +64,9 @@ li button:hover {
   width: 800px;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+#todo-text {
+  border: 3px solid black;
+  padding: 3px;
 }
