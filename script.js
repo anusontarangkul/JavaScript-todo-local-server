@@ -16,7 +16,7 @@ todoForm.addEventListener("submit", function (event) {
   var todoText = todoInput.value.trim();
 
   if (todoText === "") {
-    alert("No task was entered");
+    alert("Nothing was entered");
   } else {
     tallyCount();
     todos.push(todoText);
@@ -36,8 +36,21 @@ function storeTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// function renderTodos() {
-//   console.log(todoList.innerHTML);
-//   todoCountSpan.textContent = todos.length;
-//   for
-// }
+function renderTodos() {
+  todoList.innerHTML = "";
+  todoCountSpan.textContent = todos.length;
+
+  for (var i = 0; i < todos.length; i++) {
+    var todo = todos[i];
+
+    var li = document.createElement("li");
+    li.textContent = todo;
+    li.setAttribute("data-index", i);
+
+    var button = document.createElement("button");
+    button.textContent = "Complete";
+
+    li.appendChild(button);
+    todoList.appendChild(li);
+  }
+}
