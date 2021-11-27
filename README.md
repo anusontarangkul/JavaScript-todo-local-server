@@ -2,7 +2,7 @@
 
 ## Description
 
-(Deployment)[https://anusontarangkul.github.io/to-do-list-local-server/]
+[Deployment](https://anusontarangkul.github.io/to-do-list-local-server/)
 This app is a todo list that helps you keep organize with all of the tasks you have to do.
 ![Screenshot](screenshot.png)
 
@@ -20,12 +20,12 @@ No instalation needed
 
 You type your todo into the form and press enter. Once you finish the todo, you press complete to clear it.
 Here is the video tutorial on Youtube.
-(Youtube)[https://www.youtube.com/watch?v=7EajOseIdUs&feature=youtu.be]
+[Youtube](https://www.youtube.com/watch?v=7EajOseIdUs&feature=youtu.be)
 
 ## Credits
 
 David Anusontarangkul
-(LinkedIn)[https://www.linkedin.com/feed/](Github)[https://github.com/anusontarangkul]
+[LinkedIn](https://www.linkedin.com/feed/)[Github](https://github.com/anusontarangkul)
 Project was part of UC Berkeley in class activity on learning Javascript.
 
 ## License
