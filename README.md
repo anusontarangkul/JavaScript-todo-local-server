@@ -25,7 +25,10 @@ Here is the video tutorial on Youtube.
 ## Credits
 
 David Anusontarangkul
-[LinkedIn](https://www.linkedin.com/feed/)[Github](https://github.com/anusontarangkul)
+[LinkedIn](https://www.linkedin.com/feed/)
+
+[Github](https://github.com/anusontarangkul)
+
 Project was part of UC Berkeley in class activity on learning Javascript.
 
 ## License
